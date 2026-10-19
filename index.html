@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nexyvora | أكاديمية التحول الرقمي</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- شريط اللغات العلوي -->
+    <header class="top-bar">
+        <div class="logo">🚀 Nexyvora</div>
+        <div class="lang-switch">
+            <button onclick="changeLang('ar')" class="lang-btn active">العربية</button>
+            <button onclick="changeLang('en')" class="lang-btn">English</button>
+            <button onclick="changeLang('fr')" class="lang-btn">Français</button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1 id="hero-title">تعلّم وتدرّب اليوم… لتنجح غداً</h1>
+            <p id="hero-desc">أكاديمية رائدة عبر الإنترنت لتطويرك الشخصي والمهني من خلال تكوينات عالية الجودة ونظام تسويق ذكي عبر الشبكات.</p>
+            <a href="https://nexyvora.net/auth?ref=NV855536" target="_blank" class="cta-btn" id="hero-cta">سجل الآن عبر رابط الإحالة</a>
+        </div>
+    </section>
+
+    <!-- قسم البرامج -->
+    <section class="programs">
+        <h2 id="prog-title">برامجنا التعليمية</h2>
+        <div class="cards-grid">
+            <div class="card">
+                <h3>💻 تكوين عبر الإنترنت</h3>
+                <p>الوصول إلى وحدات تعليمية تفاعلية شاملة، وفق وتيرتك الخاصة.</p>
+            </div>
+            <div class="card">
+                <h3>📈 التسويق عبر العلاقات</h3>
+                <p>تعلم كيفية بناء فريقك وتحقيق مداخيل مستدامة ومتنامية.</p>
+            </div>
+            <div class="card">
+                <h3>🌱 التطوير الذاتي</h3>
+                <p>طور مهاراتك القيادية واكتسب عقلية رواد الأعمال الناجحين.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم رفع صورة البروفايل (للمستدى/الحساب) -->
+    <section class="profile-upload-section">
+        <h2>معاينة رفع صورة البروفايل (لأعضاء المنصة)</h2>
+        <div class="upload-box">
+            <input type="file" id="profileImageInput" accept="image/*">
+            <button onclick="uploadProfileImage()" class="upload-btn">حفظ الصورة</button>
+            <div id="previewContainer"></div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
